@@ -98,13 +98,16 @@ body {
   border-radius: 5px;
   background-color: rgba(193, 138, 245, 0.39);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 8px;
 }
 
 .todolist-lista li span {
-  align-self: center;
   box-shadow: 0.5px 0.5px 1px rgba(77, 77, 77, 0.596);
+}
+
+.todolist-lista li .item-alteracao {
+  align-self: center;
 }
 
 .todolist-lista li span:hover {
@@ -120,3 +123,19 @@ body {
 
 }
 
+@media (max-width: 550px) {
+  .todolist-lista li {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 20px;
+  }
+
+  .todolist-lista .item-alteracao {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-self: center;
+    gap: 20px;
+}
+  .todolist-lista li span {
+    padding: 5px;
+  }
+}
