@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(130, 102, 255, 0.753);
+  box-sizing: border-box;
+}
+
+.todolist-background {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: white;
+  width: min(1200px, 100%);
+  min-height: 500px;
+  justify-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px rgb(77, 77, 77);
+}
+
+.todolist-background h1 {
+  margin-top: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: blueviolet;
+}
+
+.todolist {
+  display: flex;
+  flex-basis: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  gap: 20px;
+  width: 80%;
+}
+
+.todolist input {
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  box-shadow: 1px 1px 5px rgba(77, 77, 77, 0.596);
+  padding: 0px 10px;
+}
+
+.todolist input::placeholder {
+  color: rgba(193, 138, 245, 0.39);
+}
+
+.todolist input:focus {
+  outline: none;
+  border: 2px solid blueviolet;
+}
+
+.todolist button {
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(77, 77, 77, 0.596);
+}
+
+.todolist button:hover {
+  background-color: rgb(127, 16, 230);
+  box-shadow: 0px 0px 5px rgba(77, 77, 77, 0.596);
+  cursor: pointer;
+}
+
+.todolist-lista {
+  background-color: white;
+  width: 80%;
+  border: 2px solid blueviolet;
+  min-height: 250px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 5px rgba(77, 77, 77, 0.596);
+  border-radius: 5px;
+}
+
+.todolist-lista li {
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(193, 138, 245, 0.39);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 8px;
+}
+
+.todolist-lista li span {
+  align-self: center;
+  box-shadow: 0.5px 0.5px 1px rgba(77, 77, 77, 0.596);
+}
+
+.todolist-lista li span:hover {
+  box-shadow: 0px 0px 1px rgba(77, 77, 77, 0.596);
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .todolist-background {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
